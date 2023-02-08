@@ -1,0 +1,155 @@
+body {
+  background: rgb(54, 45, 45);
+  margin: 5% 10% 10% 10%;
+  display: inline-block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bruh {
+  text-align: center;
+  padding-right: 209px;
+}
+
+.body-three {
+  background: white;
+  size: 10%;
+
+}
+
+
+.Details {
+  padding-left: -5%;
+  color: black;
+  margin-right: -1px;
+  background: white;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-picture {
+  display: inline-block;
+  border: 1px solid salmon;
+  width: 20%;
+  height: 20%;
+  border-radius: 90%;
+}
+.test3{
+  text-align: left;
+}
+
+
+.list {
+  font-size: 20px;
+  align-items: right !important;
+}
+
+.header {
+  display: inline-flex;
+  padding-left: 0%;
+  justify-content: space-between;
+  color: black;
+  background: white;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 5px solid #1F7A8C;
+}
+
+.body-three {
+  background: white;
+  display: flex;
+}
+
+.header-two {
+  font-size: 20px;
+  margin-top: 1%;
+  margin-left: 1%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.experience-1 {
+  margin-top: 1%;
+  margin-left: 2.9%;
+  padding-left: 0%;
+  padding-right: 147px;
+  padding-bottom: 2%;
+  border-bottom: 5px solid;
+  
+  
+}
+
+.header-two {
+  font-size: 50px;
+  margin-left: 3%;
+  padding-right: -50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.education-1 {
+  display: inline-block;
+  margin-top: 1%;
+  padding-bottom: 10%;
+  padding-right: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.education-2 {
+  display: inline-block;
+  padding-bottom: 4%;
+  margin-top: 1%;
+}
+
+.volunteer-work {
+  display: inline-block;
+  padding-bottom: 4%;
+  margin-top: 2%;
+  padding-left: 2.5%;
+}
+
+.skills {
+  display: inline-block;
+  margin-top: 1%;
+  padding-bottom: 10%;
+  padding-right: 115px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* 
+
+  border-bottom: 5px solid;
+  margin-left: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none; */
+.body-six {
+  background-color: white;
+  background: white;
+  display: inline-block;
+
+  /* height: 500px; */
+}
+
+
+
+.experience-3 {
+  border-bottom: 5px solid #1F7A8C;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+
+}
+.experience-4 {
+
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+  font-size: 50px;
+}
+
+.header-six {
+
+  font-size: 50px;
+  margin-left: 40%;
+}
+
