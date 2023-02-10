@@ -34,8 +34,8 @@ jobs:
             Comment but froim the API call not action
             '
 
-          env:
-            GITHUB_TOKEN: ${{ github.token }}
-            ORGANIZATION: ${{ github.event.organization.log}}
-            REPOSITORY: ${{ github.event.repository.name}}
-            ISSUE_NUMBER: ${{github.event.issue.number}}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ORGANIZATION: ${{ github.event.organization.log}}
+          REPOSITORY: ${{ github.event.repository.name}}
+          ISSUE_NUMBER: ${{github.event.issue.number}}
