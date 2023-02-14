@@ -1,12 +1,7 @@
 name: hello world workflow
-
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  issues:
+    types: [opened]
   workflow_dispatch:
 
 jobs:
