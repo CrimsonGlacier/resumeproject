@@ -1,4 +1,9 @@
 terraform {
+  cloud {
+    organization = "my-org"
+
+    workspaces {
+    name = "my-app-prod"
   required_version = ">=1.3.7"
   required_providers {
     azurerm = {
