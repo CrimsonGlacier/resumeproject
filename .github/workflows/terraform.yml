@@ -7,7 +7,22 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  
 jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Azure CLI script
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72
+        inlineScript: |
+            az account show
+            az storage -h
+            
   terraform:
     name: 'Terraform'
     env:
