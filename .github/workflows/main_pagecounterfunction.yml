@@ -4,9 +4,8 @@
 name: Build and deploy dotnet core app to Azure Function App - PageCounterFunction
 
 on:
-  push:
-    branches:
-      - main
+  issues:
+    types: [opened]
   workflow_dispatch:
 
 env:
