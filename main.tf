@@ -15,6 +15,14 @@ provider "azurerm" {
   client_secret   = "yWp8Q~OanNcFNBxniLOUHbUDPeuIMUroohfaraX9"
 }
 
+resource "azurerm_resource_group" "RG" {
+  name     = "terraform12345676"
+  location = "eastus2"
+}
+
+
+
+
 resource "azurerm_storage_account" "SG" {
   name                     = "terraform12345676"
   location                 = azurerm_resource_group.RG.location
