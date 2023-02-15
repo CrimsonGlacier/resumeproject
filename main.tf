@@ -160,7 +160,7 @@ resource "azurerm_windows_function_app" "example" {
 }
 
 resource "azurerm_storage_blob" "testblob" {
-  name                   = "my-awesome-content.zip"
+  name                   = "404.html"
   storage_account_name   = azurerm_storage_account.SG.name
   storage_container_name = "azure-webjobs-secrets"
   type                   = "Block"
