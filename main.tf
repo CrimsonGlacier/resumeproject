@@ -159,7 +159,7 @@ resource "azurerm_windows_function_app" "example" {
   site_config {}
 }
 
-resource "azurerm_storage_blob" "404blob" {
+resource "azurerm_storage_blob" "_404blob" {
   name                   = "404.html"
   storage_account_name   = azurerm_storage_account.SG.name
   storage_container_name = "azure-webjobs-secrets"
