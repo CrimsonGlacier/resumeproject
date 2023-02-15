@@ -6,16 +6,13 @@ terraform {
     access_key              = "SwYU6dK1Ia4cgD/24aA9TFf4tVeJEwfWOc66trURjvpMT6MGmZHHPHMfodogwNed/sl1FCyvmtr5+AStzk6rcw=="
   }
 }
+
 provider "azurerm" {
-  features {
-    resource_group {
-      prevent_deletion_if_contains_resources = false
-    }
-  }
-}
-resource "azurerm_resource_group" "RG" {
-  name     = "terraform12345676"
-  location = "eastus2"
+  features {}
+  subscription_id = ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+  tenant_id       = ${{ secrets.AZURE_TENANT_ID }}
+  client_id       = ${{ secrets.AZURE_CLIENT_ID }}
+  client_secret   = ${{ secrets.AZURE_CLIENT_SECRET }}
 }
 
 resource "azurerm_storage_account" "SG" {
