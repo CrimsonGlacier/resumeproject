@@ -1,7 +1,6 @@
 terraform {
   cloud {
     organization = "ostrich"
-
     workspaces {
     name = "my-app-prod"
     required_version = ">=1.3.7"
