@@ -1,10 +1,9 @@
 terraform {
-  required_version = ">=1.3.7"
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 3.41.0"
-    }
+  backend "azurerm" {
+    storage_account_name    = "tfstate65160"
+    container_name          = "tfstate"
+    key                     = "terraform.tfstate"
+    access_key              = "SwYU6dK1Ia4cgD/24aA9TFf4tVeJEwfWOc66trURjvpMT6MGmZHHPHMfodogwNed/sl1FCyvmtr5+AStzk6rcw=="
   }
 }
 provider "azurerm" {
