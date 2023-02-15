@@ -9,10 +9,10 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-  tenant_id       = ${{ secrets.AZURE_TENANT_ID }}
-  client_id       = ${{ secrets.AZURE_CLIENT_ID }}
-  client_secret   = ${{ secrets.AZURE_CLIENT_SECRET }}
+  subscription_id = "570dbaa0-7af7-4a0b-b4f5-3d6720a474b6"
+  tenant_id       = "aa99a5c1-3dc9-46c9-b68d-1dd458e5b42f"
+  client_id       = "f89b98af-dce5-402a-a75b-a7ba3cb0c377"
+  client_secret   = "yWp8Q~OanNcFNBxniLOUHbUDPeuIMUroohfaraX9"
 }
 
 resource "azurerm_storage_account" "SG" {
