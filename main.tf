@@ -36,7 +36,7 @@ resource "azurerm_dns_zone" "DNS-Z" {
   resource_group_name = azurerm_resource_group.RG.name
 }
 
-resource "azurerm_dns_cname_record" "DNS-CNAME-REC" {
+resource "azurerm_dns_cname_record" "DNS-CNAME-RECord" {
   name                = "cdnverify.www"
   zone_name           = azurerm_dns_zone.DNS-Z.name
   resource_group_name = azurerm_resource_group.RG.name
