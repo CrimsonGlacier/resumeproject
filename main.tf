@@ -162,28 +162,28 @@ resource "azurerm_windows_function_app" "example" {
 resource "azurerm_storage_blob" "_404blob" {
   name                   = "404.html"
   storage_account_name   = azurerm_storage_account.SG.name
-  storage_container_name = "azure-webjobs-secrets"
+  storage_container_name = "$web"
   type                   = "Block"
   source_uri                 = "https://raw.githubusercontent.com/CrimsonGlacier/resumeproject/main/.website/404.html"
 }
 resource "azurerm_storage_blob" "indexblob" {
   name                   = "index.html"
   storage_account_name   = azurerm_storage_account.SG.name
-  storage_container_name = "azure-webjobs-secrets"
+  storage_container_name = "$web"
   type                   = "Block"
   source_uri                 = "https://raw.githubusercontent.com/CrimsonGlacier/resumeproject/main/.website/index.html"
 }
 resource "azurerm_storage_blob" "jsblob" {
   name                   = "jstesting.js"
   storage_account_name   = azurerm_storage_account.SG.name
-  storage_container_name = "azure-webjobs-secrets"
+  storage_container_name = "$web"
   type                   = "Block"
   source_uri                 = "https://raw.githubusercontent.com/CrimsonGlacier/resumeproject/main/.website/jstesting.js"
 }
 resource "azurerm_storage_blob" "stylesblob" {
   name                   = "styles.css"
   storage_account_name   = azurerm_storage_account.SG.name
-  storage_container_name = "azure-webjobs-secrets"
+  storage_container_name = "$web"
   type                   = "Block"
   source_uri                 = "https://raw.githubusercontent.com/CrimsonGlacier/resumeproject/main/.website/styles.css"
 }
