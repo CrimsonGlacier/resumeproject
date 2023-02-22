@@ -44,6 +44,14 @@ resource "azurerm_dns_cname_record" "DNS-CNAME-REC" {
   record              = "cdnverify.stanleysmith.azureedge.net"
 }
 
+resource "azurerm_dns_cname_record" "DNS-CNAME-REC" {
+  name                = "cdnverify"
+  zone_name           = azurerm_dns_zone.DNS-Z.name
+  resource_group_name = azurerm_resource_group.RG.name
+  ttl                 = 3600
+  record              = "cdnverify.stanleysmith.azureedge.net"
+}
+
 resource "azurerm_dns_cname_record" "DNS-CNAME-REC-ALIAS" {
   name                = "www"
   zone_name           = azurerm_dns_zone.DNS-Z.name
