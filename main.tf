@@ -163,7 +163,7 @@ resource "azurerm_windows_function_app" "example" {
 resource "azurerm_storage_container" "containor" {
   name                  = "$web"
   storage_account_name  = azurerm_storage_account.SG.name
-  container_access_type = "public"
+  container_access_type = "blob"
 }
 
 
